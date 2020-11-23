@@ -1,0 +1,82 @@
+.about-container {
+    color: #000;
+}
+
+.wrapper .about-container h2 {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.wrapper .wpb-wrapper {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.wrapper .wrapper-imagination {
+    margin-top: 85px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.wrapper .wrapper-imagination .imagination {
+    padding: 0 15px;
+    width: 400px;
+}
+
+.wrapper .wrapper-imagination .imagination img {
+    width: 100%;
+    height: 400px;
+}
+
+.wrapper .wrapper-imagination .imagination img:hover {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);   
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+.imagination > div { 
+    overflow: hidden; 
+    margin-bottom: 32px;
+}
+
+.wrapper .wrapper-imagination .imagination .sub-imagination {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .wrapper-imagination .imagination .sub-imagination p:first-child{
+    font-weight: 600;
+    font-size: .9rem;
+    margin-bottom: 16px;
+    color: #cfa167;
+}    
+
+.wrapper .wrapper-imagination .imagination .sub-imagination h2 {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.wrapper .wrapper-imagination .imagination .sub-imagination p:nth-child(3) {
+    font-size: .98rem;
+    margin-bottom: 32px;
+    opacity: .5;
+}
+
+.wrapper .wrapper-imagination .imagination .sub-imagination .mini-line {
+    width: 2px;
+    height: 32px;
+    margin-bottom: 16px;
+    background-color: #cfa167;
+}
+
+.wrapper .wrapper-imagination .imagination .sub-imagination p:last-child {
+    font-size: .75rem;
+    font-weight: 700;
+}

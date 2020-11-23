@@ -1,114 +1,115 @@
-.header_wrapper {
-  padding: 0 35px;
-  box-sizing: border-box;
+.header .header-inner {
+  padding: 30px;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.01);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.header_top {
-  border-bottom: 1px solid #eaeaea;
+.header .header-inner:hover {
+  background-color: #fff;
 }
 
-.header_top-left,
-.header_top-right,
-.header_top-right ul {
+.header .header-inner:hover .header-inner-left-item > a,
+.header .header-inner:hover .header-inner-right ul a {
+  color: #000000;
+}
+
+.header .header-inner-left {
+  display: flex;
+}
+
+.header .header-inner-left img {
+  width: 70px;
+  height: 40px;
+  margin-right: 48px;
+}
+
+.header .header-inner-left ul {
   display: flex;
   align-items: center;
 }
 
-.header_top-left,
-.header_top-right {
-  padding: 12px 0;
-  box-sizing: border-box;
-}
-
-.header_top-left li {
-  font-size: 15px;
-  margin-left: 40px;
-  color: #8f8f8f;
-}
-
-.header_top-left a,
-.header_top-right a {
-  transition: color 0.2s;
-}
-
-.header_top-left a:hover,
-.header_top-right a:hover {
-  color: #52b765;
-}
-
-.header_top-left li:first-child {
-  margin-left: 0;
-}
-
-.header_top-right > a {
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: -0.03em;
-  margin-right: 57px;
-}
-
-.header_top-right > a i {
-  margin-right: 5px;
-  color: #52b765;
-  font-size: 12px;
+.header .header-inner-left ul .header-inner-left-item {
+  opacity: 0.8;
+  padding: 16px 10px;
   position: relative;
-  top: -1px;
 }
 
-.header_top-right ul li {
-  margin: 15px 8px;
+.header .header-inner-left ul .header-inner-left-item:hover .hide {
+  opacity: 1;
+  transform: translateY(-16px);
 }
 
-.main_logo {
-  width: 250px;
-  height: 70px;
+.header .header-inner-left ul .header-inner-left-item > a,
+.header .header-inner-right ul a {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.header-inner .header-inner-left-item .hide {
+  display: block;
+  position: absolute;
+  top: 70px;
+  background-color: #ffffff;
+  padding: 24px 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-top: 2px solid #000;
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: translateY(16px);
+}
+
+.header-inner .header-inner-left-item .hide li {
+  padding: 10px 48px;
+}
+
+.header-inner .header-inner-left-item .hide li a {
+  position: relative;
   padding: 4px 0;
 }
 
-.header_wrapper .header_wrapper-menus {
+.header-inner .header-inner-left-item .hide li a:hover {
+  color: #cfa167;
+}
+
+.header-inner .header-inner-left-item .hide li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0px;
+  height: 2px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.3s;
+  opacity: 0;
+  border-bottom: 2px solid #000;
+}
+
+.header-inner .header-inner-left-item .hide li a:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+.header .header-inner-left ul .header-inner-left-item i {
+  margin-left: 5px;
+}
+
+.header .header-inner-right {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.header_wrapper .header_wrapper-menus li {
-  padding: 0 21px;
-  box-sizing: border-box;
-  font-size: 16px;
-  line-height: 21px;
-  color: #323232;
-  font-weight: 600;
+.header .header-inner-right a:first-child {
+  margin-right: 48px;
 }
 
-.header_wrapper .header_wrapper-menus li {
-  transition: color 0.2s;
-}
-
-.header_wrapper .header_wrapper-menus li:active,
-.header_wrapper .header_wrapper-menus li:hover {
-  color: #52b765;
-}
-
-.header_wrapper .header_wrapper-menus li i {
-  font-size: 1px;
-  margin-left: 7px;
-}
-
-.header_wrapper-cart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header_wrapper-cart .header_wrapper-pickup {
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: #52b765;
-  padding: 20px 25px;
-  margin-left: 32px;
+.header .header-inner-right a:first-child:hover {
+  opacity: 0.5;
 }
